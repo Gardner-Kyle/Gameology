@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D227A5BE2544C80700F19889 /* Gameology.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D227A5BC2544C80700F19889 /* Gameology.xcdatamodeld */; };
+		D227A5FB2544D15400F19889 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A5FA2544D15400F19889 /* Global.swift */; };
+		D227A613254500DA00F19889 /* VideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A612254500DA00F19889 /* VideoService.swift */; };
+		D227A6182545214400F19889 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A6172545214400F19889 /* ReviewService.swift */; };
+		D227A61D25452A2800F19889 /* GameTableSectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A61C25452A2800F19889 /* GameTableSectionViewCell.swift */; };
+		D227A62225452AFB00F19889 /* GameTableSubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A62125452AFB00F19889 /* GameTableSubViewCell.swift */; };
+		D227A62825452EF200F19889 /* GameSummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A62725452EF200F19889 /* GameSummaryCollectionViewCell.swift */; };
+		D227A62D2545306400F19889 /* GameVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A62C2545306400F19889 /* GameVideoCollectionViewCell.swift */; };
+		D227A632254531C400F19889 /* GameScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A631254531C400F19889 /* GameScoreCollectionViewCell.swift */; };
+		D227A63A254532DB00F19889 /* GameControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227A639254532DB00F19889 /* GameControllerExt.swift */; };
+		D26C0D8825455AE000E673A0 /* CollectionViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26C0D8725455AE000E673A0 /* CollectionViewCellExt.swift */; };
+		D26C0D8D254571B800E673A0 /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26C0D8C254571B800E673A0 /* ViewControllerExt.swift */; };
+		D272F5EC25461D68003DC8F3 /* ReviewCore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABBEA62544BEBF005DD424 /* ReviewCore+CoreDataClass.swift */; };
+		D272F60325462F5E003DC8F3 /* GameCore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D272F60125462F5E003DC8F3 /* GameCore+CoreDataClass.swift */; };
+		D272F6102546315C003DC8F3 /* VideoCore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D272F60E2546315C003DC8F3 /* VideoCore+CoreDataClass.swift */; };
+		D272F62C25466D33003DC8F3 /* GameControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D272F62B25466D33003DC8F3 /* GameControllerTest.swift */; };
+		D272F63C254685B3003DC8F3 /* ButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D272F63B254685B3003DC8F3 /* ButtonExt.swift */; };
+		D272F65625468FA2003DC8F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D272F65825468FA2003DC8F3 /* Launch Screen.storyboard */; };
+		D2ABBE9A2544AF14005DD424 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABBE992544AF14005DD424 /* GameService.swift */; };
+		D2F6322C2543410200BBC084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6322B2543410200BBC084 /* AppDelegate.swift */; };
+		D2F6322E2543410200BBC084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6322D2543410200BBC084 /* SceneDelegate.swift */; };
+		D2F632302543410200BBC084 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6322F2543410200BBC084 /* GameController.swift */; };
+		D2F632332543410200BBC084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F632312543410200BBC084 /* Main.storyboard */; };
+		D2F632382543410400BBC084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F632372543410400BBC084 /* Assets.xcassets */; };
+		D2F632462543410400BBC084 /* GameologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F632452543410400BBC084 /* GameologyTests.swift */; };
+		D2F632512543410400BBC084 /* GameologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F632502543410400BBC084 /* GameologyUITests.swift */; };
+		D2F6326925437B4E00BBC084 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6326825437B4E00BBC084 /* Game.swift */; };
+		D2F6327E2543853E00BBC084 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6327D2543853E00BBC084 /* Video.swift */; };
+		D2F632882543855200BBC084 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F632872543855200BBC084 /* Review.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2F632422543410400BBC084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2F632202543410200BBC084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F632272543410200BBC084;
+			remoteInfo = Gameology;
+		};
+		D2F6324D2543410400BBC084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2F632202543410200BBC084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F632272543410200BBC084;
+			remoteInfo = Gameology;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D227A5BD2544C80700F19889 /* Gameology.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gameology.xcdatamodel; sourceTree = "<group>"; };
+		D227A5FA2544D15400F19889 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D227A612254500DA00F19889 /* VideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoService.swift; sourceTree = "<group>"; };
+		D227A6172545214400F19889 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		D227A61C25452A2800F19889 /* GameTableSectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableSectionViewCell.swift; sourceTree = "<group>"; };
+		D227A62125452AFB00F19889 /* GameTableSubViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableSubViewCell.swift; sourceTree = "<group>"; };
+		D227A62725452EF200F19889 /* GameSummaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSummaryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D227A62C2545306400F19889 /* GameVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D227A631254531C400F19889 /* GameScoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		D227A639254532DB00F19889 /* GameControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerExt.swift; sourceTree = "<group>"; };
+		D26C0D8725455AE000E673A0 /* CollectionViewCellExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellExt.swift; sourceTree = "<group>"; };
+		D26C0D8C254571B800E673A0 /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		D272F60125462F5E003DC8F3 /* GameCore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameCore+CoreDataClass.swift"; path = "../../../GameCore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D272F60E2546315C003DC8F3 /* VideoCore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoCore+CoreDataClass.swift"; path = "../../../VideoCore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D272F60F2546315C003DC8F3 /* VideoCore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoCore+CoreDataProperties.swift"; path = "../../../VideoCore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D272F61B2546353C003DC8F3 /* GameCore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameCore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D272F62B25466D33003DC8F3 /* GameControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerTest.swift; sourceTree = "<group>"; };
+		D272F63B254685B3003DC8F3 /* ButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExt.swift; sourceTree = "<group>"; };
+		D272F65725468FA2003DC8F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D2ABBE992544AF14005DD424 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		D2ABBEA62544BEBF005DD424 /* ReviewCore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReviewCore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D2ABBEA72544BEBF005DD424 /* ReviewCore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReviewCore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2F632282543410200BBC084 /* Gameology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gameology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F6322B2543410200BBC084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2F6322D2543410200BBC084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2F6322F2543410200BBC084 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		D2F632322543410200BBC084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2F632372543410400BBC084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2F6323C2543410400BBC084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F632412543410400BBC084 /* GameologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F632452543410400BBC084 /* GameologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameologyTests.swift; sourceTree = "<group>"; };
+		D2F632472543410400BBC084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F6324C2543410400BBC084 /* GameologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F632502543410400BBC084 /* GameologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameologyUITests.swift; sourceTree = "<group>"; };
+		D2F632522543410400BBC084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F6326825437B4E00BBC084 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D2F6327D2543853E00BBC084 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D2F632872543855200BBC084 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F632252543410200BBC084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F6323E2543410400BBC084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F632492543410400BBC084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D227A6062544D62A00F19889 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D272F61B2546353C003DC8F3 /* GameCore+CoreDataProperties.swift */,
+				D272F60E2546315C003DC8F3 /* VideoCore+CoreDataClass.swift */,
+				D272F60F2546315C003DC8F3 /* VideoCore+CoreDataProperties.swift */,
+				D272F60125462F5E003DC8F3 /* GameCore+CoreDataClass.swift */,
+				D2ABBEA62544BEBF005DD424 /* ReviewCore+CoreDataClass.swift */,
+				D2ABBEA72544BEBF005DD424 /* ReviewCore+CoreDataProperties.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		D227A6082544D64F00F19889 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D227A61C25452A2800F19889 /* GameTableSectionViewCell.swift */,
+				D227A62125452AFB00F19889 /* GameTableSubViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D227A62625452EC900F19889 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D227A62725452EF200F19889 /* GameSummaryCollectionViewCell.swift */,
+				D227A62C2545306400F19889 /* GameVideoCollectionViewCell.swift */,
+				D227A631254531C400F19889 /* GameScoreCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		D2F6321F2543410200BBC084 = {
+			isa = PBXGroup;
+			children = (
+				D2F6326825437B4E00BBC084 /* Game.swift */,
+				D2F6322A2543410200BBC084 /* Gameology */,
+				D2F632442543410400BBC084 /* GameologyTests */,
+				D2F6324F2543410400BBC084 /* GameologyUITests */,
+				D2F632292543410200BBC084 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2F632292543410200BBC084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2F632282543410200BBC084 /* Gameology.app */,
+				D2F632412543410400BBC084 /* GameologyTests.xctest */,
+				D2F6324C2543410400BBC084 /* GameologyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2F6322A2543410200BBC084 /* Gameology */ = {
+			isa = PBXGroup;
+			children = (
+				D2F6326425437ADC00BBC084 /* Config */,
+				D2F6326725437B0600BBC084 /* Services */,
+				D2F6326D25437B9400BBC084 /* Extensions */,
+				D2F6326625437AFC00BBC084 /* Models */,
+				D2F6327725437D1800BBC084 /* Views */,
+				D2F6326525437AED00BBC084 /* Controllers */,
+			);
+			path = Gameology;
+			sourceTree = "<group>";
+		};
+		D2F632442543410400BBC084 /* GameologyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D272F62B25466D33003DC8F3 /* GameControllerTest.swift */,
+				D2F632452543410400BBC084 /* GameologyTests.swift */,
+				D2F632472543410400BBC084 /* Info.plist */,
+			);
+			path = GameologyTests;
+			sourceTree = "<group>";
+		};
+		D2F6324F2543410400BBC084 /* GameologyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2F632502543410400BBC084 /* GameologyUITests.swift */,
+				D2F632522543410400BBC084 /* Info.plist */,
+			);
+			path = GameologyUITests;
+			sourceTree = "<group>";
+		};
+		D2F6326425437ADC00BBC084 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D2F6323C2543410400BBC084 /* Info.plist */,
+				D227A5BC2544C80700F19889 /* Gameology.xcdatamodeld */,
+				D2F6322B2543410200BBC084 /* AppDelegate.swift */,
+				D2F6322D2543410200BBC084 /* SceneDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D2F6326525437AED00BBC084 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2F6322F2543410200BBC084 /* GameController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2F6326625437AFC00BBC084 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D227A62625452EC900F19889 /* CollectionViewCells */,
+				D227A6082544D64F00F19889 /* TableViewCells */,
+				D227A6062544D62A00F19889 /* Core Data */,
+				D2F6327D2543853E00BBC084 /* Video.swift */,
+				D2F632872543855200BBC084 /* Review.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2F6326725437B0600BBC084 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2ABBE992544AF14005DD424 /* GameService.swift */,
+				D227A5FA2544D15400F19889 /* Global.swift */,
+				D227A612254500DA00F19889 /* VideoService.swift */,
+				D227A6172545214400F19889 /* ReviewService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D2F6326D25437B9400BBC084 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D227A639254532DB00F19889 /* GameControllerExt.swift */,
+				D26C0D8725455AE000E673A0 /* CollectionViewCellExt.swift */,
+				D26C0D8C254571B800E673A0 /* ViewControllerExt.swift */,
+				D272F63B254685B3003DC8F3 /* ButtonExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D2F6327725437D1800BBC084 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2F632312543410200BBC084 /* Main.storyboard */,
+				D2F632372543410400BBC084 /* Assets.xcassets */,
+				D272F65825468FA2003DC8F3 /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2F632272543410200BBC084 /* Gameology */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F632552543410400BBC084 /* Build configuration list for PBXNativeTarget "Gameology" */;
+			buildPhases = (
+				D2F632242543410200BBC084 /* Sources */,
+				D2F632252543410200BBC084 /* Frameworks */,
+				D2F632262543410200BBC084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gameology;
+			productName = Gameology;
+			productReference = D2F632282543410200BBC084 /* Gameology.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2F632402543410400BBC084 /* GameologyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F632582543410400BBC084 /* Build configuration list for PBXNativeTarget "GameologyTests" */;
+			buildPhases = (
+				D2F6323D2543410400BBC084 /* Sources */,
+				D2F6323E2543410400BBC084 /* Frameworks */,
+				D2F6323F2543410400BBC084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2F632432543410400BBC084 /* PBXTargetDependency */,
+			);
+			name = GameologyTests;
+			productName = GameologyTests;
+			productReference = D2F632412543410400BBC084 /* GameologyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2F6324B2543410400BBC084 /* GameologyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F6325B2543410400BBC084 /* Build configuration list for PBXNativeTarget "GameologyUITests" */;
+			buildPhases = (
+				D2F632482543410400BBC084 /* Sources */,
+				D2F632492543410400BBC084 /* Frameworks */,
+				D2F6324A2543410400BBC084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2F6324E2543410400BBC084 /* PBXTargetDependency */,
+			);
+			name = GameologyUITests;
+			productName = GameologyUITests;
+			productReference = D2F6324C2543410400BBC084 /* GameologyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2F632202543410200BBC084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					D2F632272543410200BBC084 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					D2F632402543410400BBC084 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = D2F632272543410200BBC084;
+					};
+					D2F6324B2543410400BBC084 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = D2F632272543410200BBC084;
+					};
+				};
+			};
+			buildConfigurationList = D2F632232543410200BBC084 /* Build configuration list for PBXProject "Gameology" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2F6321F2543410200BBC084;
+			productRefGroup = D2F632292543410200BBC084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2F632272543410200BBC084 /* Gameology */,
+				D2F632402543410400BBC084 /* GameologyTests */,
+				D2F6324B2543410400BBC084 /* GameologyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2F632262543410200BBC084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D272F65625468FA2003DC8F3 /* Launch Screen.storyboard in Resources */,
+				D2F632382543410400BBC084 /* Assets.xcassets in Resources */,
+				D2F632332543410200BBC084 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F6323F2543410400BBC084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F6324A2543410400BBC084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2F632242543410200BBC084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D272F5EC25461D68003DC8F3 /* ReviewCore+CoreDataClass.swift in Sources */,
+				D227A6182545214400F19889 /* ReviewService.swift in Sources */,
+				D227A62225452AFB00F19889 /* GameTableSubViewCell.swift in Sources */,
+				D227A62D2545306400F19889 /* GameVideoCollectionViewCell.swift in Sources */,
+				D272F60325462F5E003DC8F3 /* GameCore+CoreDataClass.swift in Sources */,
+				D227A632254531C400F19889 /* GameScoreCollectionViewCell.swift in Sources */,
+				D227A5BE2544C80700F19889 /* Gameology.xcdatamodeld in Sources */,
+				D227A62825452EF200F19889 /* GameSummaryCollectionViewCell.swift in Sources */,
+				D2F632302543410200BBC084 /* GameController.swift in Sources */,
+				D272F63C254685B3003DC8F3 /* ButtonExt.swift in Sources */,
+				D227A61D25452A2800F19889 /* GameTableSectionViewCell.swift in Sources */,
+				D2F6326925437B4E00BBC084 /* Game.swift in Sources */,
+				D227A613254500DA00F19889 /* VideoService.swift in Sources */,
+				D2F6322C2543410200BBC084 /* AppDelegate.swift in Sources */,
+				D2F632882543855200BBC084 /* Review.swift in Sources */,
+				D272F6102546315C003DC8F3 /* VideoCore+CoreDataClass.swift in Sources */,
+				D2F6327E2543853E00BBC084 /* Video.swift in Sources */,
+				D227A5FB2544D15400F19889 /* Global.swift in Sources */,
+				D26C0D8D254571B800E673A0 /* ViewControllerExt.swift in Sources */,
+				D2ABBE9A2544AF14005DD424 /* GameService.swift in Sources */,
+				D227A63A254532DB00F19889 /* GameControllerExt.swift in Sources */,
+				D26C0D8825455AE000E673A0 /* CollectionViewCellExt.swift in Sources */,
+				D2F6322E2543410200BBC084 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F6323D2543410400BBC084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F632462543410400BBC084 /* GameologyTests.swift in Sources */,
+				D272F62C25466D33003DC8F3 /* GameControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F632482543410400BBC084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F632512543410400BBC084 /* GameologyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2F632432543410400BBC084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F632272543410200BBC084 /* Gameology */;
+			targetProxy = D2F632422543410400BBC084 /* PBXContainerItemProxy */;
+		};
+		D2F6324E2543410400BBC084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F632272543410200BBC084 /* Gameology */;
+			targetProxy = D2F6324D2543410400BBC084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D272F65825468FA2003DC8F3 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D272F65725468FA2003DC8F3 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+		D2F632312543410200BBC084 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F632322543410200BBC084 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2F632532543410400BBC084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2F632542543410400BBC084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2F632562543410400BBC084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4LXRUQMU;
+				INFOPLIST_FILE = Gameology/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kb-gardner.Gameology";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2F632572543410400BBC084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4LXRUQMU;
+				INFOPLIST_FILE = Gameology/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kb-gardner.Gameology";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2F632592543410400BBC084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4LXRUQMU;
+				INFOPLIST_FILE = GameologyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kb-gardner.GameologyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gameology.app/Gameology";
+			};
+			name = Debug;
+		};
+		D2F6325A2543410400BBC084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4LXRUQMU;
+				INFOPLIST_FILE = GameologyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kb-gardner.GameologyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gameology.app/Gameology";
+			};
+			name = Release;
+		};
+		D2F6325C2543410400BBC084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4LXRUQMU;
+				INFOPLIST_FILE = GameologyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kb-gardner.GameologyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gameology;
+			};
+			name = Debug;
+		};
+		D2F6325D2543410400BBC084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4LXRUQMU;
+				INFOPLIST_FILE = GameologyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kb-gardner.GameologyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gameology;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2F632232543410200BBC084 /* Build configuration list for PBXProject "Gameology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F632532543410400BBC084 /* Debug */,
+				D2F632542543410400BBC084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F632552543410400BBC084 /* Build configuration list for PBXNativeTarget "Gameology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F632562543410400BBC084 /* Debug */,
+				D2F632572543410400BBC084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F632582543410400BBC084 /* Build configuration list for PBXNativeTarget "GameologyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F632592543410400BBC084 /* Debug */,
+				D2F6325A2543410400BBC084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F6325B2543410400BBC084 /* Build configuration list for PBXNativeTarget "GameologyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F6325C2543410400BBC084 /* Debug */,
+				D2F6325D2543410400BBC084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D227A5BC2544C80700F19889 /* Gameology.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D227A5BD2544C80700F19889 /* Gameology.xcdatamodel */,
+			);
+			currentVersion = D227A5BD2544C80700F19889 /* Gameology.xcdatamodel */;
+			path = Gameology.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2F632202543410200BBC084 /* Project object */;
+}
