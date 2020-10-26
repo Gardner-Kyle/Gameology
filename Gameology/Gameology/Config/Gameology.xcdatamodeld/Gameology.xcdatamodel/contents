@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GameCore" representedClassName="GameCore" syncable="YES" codeGenerationType="category">
+        <attribute name="deck" optional="YES" attributeType="String"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="original_release_date" optional="YES" attributeType="String"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VideoCore"/>
+    </entity>
+    <entity name="ReviewCore" representedClassName="ReviewCore" syncable="YES" codeGenerationType="category">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="publish_date" optional="YES" attributeType="String"/>
+        <attribute name="review_description" optional="YES" attributeType="String"/>
+        <attribute name="reviewer" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameCore"/>
+    </entity>
+    <entity name="VideoCore" representedClassName="VideoCore" syncable="YES" codeGenerationType="category">
+        <attribute name="deck" optional="YES" attributeType="String"/>
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hd_url" optional="YES" attributeType="String"/>
+        <attribute name="high_url" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="low_url" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="publish_date" optional="YES" attributeType="String"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="GameCore" positionX="40.8359375" positionY="-169.6015625" width="128" height="148"/>
+        <element name="ReviewCore" positionX="202.07421875" positionY="-86.28125" width="128" height="133"/>
+        <element name="VideoCore" positionX="-138.91796875" positionY="-88.37109375" width="128" height="193"/>
+    </elements>
+</model>
